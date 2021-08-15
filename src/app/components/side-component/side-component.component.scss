@@ -1,0 +1,115 @@
+
+.contact{
+    font-size: 11px;
+    outline-color: rgb(52,52,52);
+    .heading {
+        width:100%;
+        border-bottom: 1px solid black;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    .contactbox{
+        display:flex;
+        flex-wrap: wrap;
+    
+    .contactSection{
+        flex-basis: 50%;
+
+        .contactTitle{
+            font-weight: bold;
+            line-height: 18px;
+            }
+    
+        .contactInfo{
+            line-height: 18px;
+        }
+    }
+    }
+    
+}
+.skills{
+    font-size: 11px;
+    outline-color: rgb(52,52,52);
+    .heading {
+        width:100%;
+        border-bottom: 1px solid black;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    .category{
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+    }
+    .categoryItems{
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        .categoryName{
+            font-weight: bold;
+            line-height: 15px;
+            padding: 5px;
+        }
+        .categoryDetail{
+            width: 100%;
+            padding-left: 15px;
+            padding-bottom: 3px;
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            
+            .skillName , .skillRating{
+                flex:1
+            }
+        }
+    }
+    
+}
+
+
+    
+@media only screen and (max-width:600px) {
+
+    .skills {
+       
+
+        .category {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100% !important;
+        }
+        .categoryItems{
+            flex-basis: 50%;
+        }
+    }
+
+}
+.languages{
+    font-size: 11px;
+    outline-color: rgb(52,52,52);
+    .heading {
+        width:100%;
+        border-bottom: 1px solid black;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+   
+    .languageItems{
+        padding-top: 15px;
+        ul { list-style-type: none;display: flex; 
+        li{
+            padding-left: 15px;
+        }
+        }
+    }
+}

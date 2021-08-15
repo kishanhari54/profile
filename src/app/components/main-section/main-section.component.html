@@ -1,0 +1,22 @@
+<section class="sections" *ngFor="let section of sections">
+
+    <div class="heading"> {{section.heading}}</div>
+    <div class="details" *ngFor="let detail of section.details">
+      <div class="timeframe"> {{detail.timeframe}}</div>
+      <div class="detailsInfo">
+        <span class="position"> {{detail.position}}</span>
+        <span class="organization"> {{detail.organization}}</span>
+        <ng-container *ngIf="detail.activities">
+          <div class="activity" *ngFor="let activity of detail.activities">
+            <u *ngIf="activity.activityHeading">{{activity.activityHeading}}</u>
+            <div class="activityInformation">
+              <ul>
+                <li *ngFor="let item of activity.activityInfo">{{item}}</li>
+              </ul>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+  </section>

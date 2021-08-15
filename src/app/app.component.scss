@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=STIX+Two+Text:ital,wght@1,600&display=swap');
 
 
-*{
+/* *{
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
+ */
 .container{
     max-width:1300px;
     min-width: 300px;
-    margin: 0 auto;
+    margin: 8px auto;
     border: 1px solid #e8ecf0;
     box-shadow: 0 0 10px rgb(88 88 95 / 12%);
     //font-family: 'STIX Two Text', serif;
@@ -24,7 +24,7 @@
 
     }
 }
-
+ /* 
 header {
     width: 100% ;
     padding: 15px 15px 20px;
@@ -75,22 +75,22 @@ header {
         }
     }
 
-}
+}  */
 
-.noWrap{
+/* .noWrap{
     white-space: nowrap;
     
-}
+} */
 
 .resumeDetails{
     display: flex;
     flex-wrap: wrap;
-    p  {
+   /*  p  {
         //font-size: clamp(11px,15px,18px);
         font-size: 12px;
         line-height: 18px;
         outline-color: rgb(52,52,52);
-    }
+    } */
     .main {
         flex:2;
         padding:15px;
@@ -102,7 +102,7 @@ header {
     }
 
 }
-
+/* 
 .sections {
     font-size: 11px;
     line-height: 18px;
@@ -146,7 +146,7 @@ header {
 
    
 }
-
+ *//* 
 .contact{
     font-size: 11px;
     outline-color: rgb(52,52,52);
@@ -159,14 +159,24 @@ header {
         font-weight: 700;
         line-height: 22px;
     }
-    .contactTitle{
-        font-weight: bold;
-        line-height: 18px;
-        }
+    .contactbox{
+        display:flex;
+        flex-wrap: wrap;
+    
+    .contactSection{
+        flex-basis: 50%;
 
-    .contactInfo{
-        line-height: 18px;
+        .contactTitle{
+            font-weight: bold;
+            line-height: 18px;
+            }
+    
+        .contactInfo{
+            line-height: 18px;
+        }
     }
+    }
+    
 }
 .skills{
     font-size: 11px;
@@ -183,6 +193,7 @@ header {
     .category{
         display: flex;
         flex-direction: column;
+        max-width: 70%;
     }
     .categoryItems{
         padding-top: 15px;
@@ -194,7 +205,7 @@ header {
             padding: 5px;
         }
         .categoryDetail{
-           width: 70%;
+            width: 100%;
             padding-left: 15px;
             padding-bottom: 3px;
             display:flex;
@@ -220,12 +231,13 @@ header {
         .category {
         flex-direction: row;
         flex-wrap: wrap;
+        max-width: 100% !important;
         }
         .categoryItems{
             flex-basis: 50%;
         }
         .categoryDetail{
-            max-width: 100%;
+           // max-width: 100%;
         }
     }
 
@@ -251,7 +263,4 @@ header {
         }
         }
     }
-
-       
-    
-}
+} */

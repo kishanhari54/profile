@@ -1,5 +1,6 @@
 <div class="container">
-  <header>
+  <app-header></app-header>
+ <!--  <header>
     <div class="info">
       <div class="name"> Harshet Dayasankar</div>
       <span class="role"> Consultant</span>
@@ -7,18 +8,20 @@
     <div class="profimg">
       <img src="assets/profImage.jpg" alt="Image">
     </div>
-  </header>
+  </header> -->
   <section class="resumeDetails">
     <section class="main">
-      <section class="aboutme">
+      <app-about-me></app-about-me>
+     <!--  <section class="aboutme">
         <p>
           IT Professional, with aspirations of becoming a successful software architect who firmly believes
           <span class="noWrap"> 'motivated team + team collaboration' </span>is the key for any successful product
           delivery.<br>
           From my personal experiences a healthy work life balance is very important for any individual in the long run.
         </p>
-      </section>
-      <section class="sections" *ngFor="let section of sections">
+      </section> -->
+      <app-main-section [sections]="sections"></app-main-section>
+     <!--  <section class="sections" *ngFor="let section of sections">
 
         <div class="heading"> {{section.heading}}</div>
         <div class="details" *ngFor="let detail of section.details">
@@ -39,7 +42,7 @@
           </div>
         </div>
 
-      </section>
+      </section> -->
 
       <!--  <section class="sections">
       <div class="heading"> Work History</div>
@@ -80,16 +83,21 @@
 
     </section>
     <section class="side">
-      <section class="contact">
+      <app-side-component></app-side-component>
+<!--       <section class="contact">
         <div class="heading">Contact</div>
+        <div class="contactbox"> 
         <ng-container *ngFor="let contact of contactSection">
+         <div class="contactSection"> 
           <div class="contactTitle">
             {{contact.title}}
           </div>
           <div class="contactInfo">
             {{contact.value}}
           </div>
+        </div>
         </ng-container>
+      </div>
 
       </section>
       <section class="skills">
@@ -126,7 +134,8 @@
         </div>
       </section>
 
-    </section>
+    </section> -->
+  </section>
   </section>
 
 </div>

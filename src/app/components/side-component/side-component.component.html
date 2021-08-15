@@ -1,0 +1,50 @@
+<section class="contact">
+    <div class="heading">Contact</div>
+    <div class="contactbox"> 
+    <ng-container *ngFor="let contact of contactSection">
+     <div class="contactSection"> 
+      <div class="contactTitle">
+        {{contact.title}}
+      </div>
+      <div class="contactInfo">
+        {{contact.value}}
+      </div>
+    </div>
+    </ng-container>
+  </div>
+
+  </section>
+  <section class="skills">
+    <div class="heading">
+      Skills
+    </div>
+    <div class="category">
+      <ng-container  *ngFor="let skill of skillSection">
+        <div class="categoryItems">    
+          <div class='categoryName'>
+            {{skill.category}}
+          </div>
+          <div class="categoryDetail" *ngFor="let categoryDetail of skill.categoryDetails">
+            <label class="skillName" for="categoryDetail.skill">{{categoryDetail.skill}}</label>
+            <progress class="skillRating"  id="categoryDetail.skill" value="{{categoryDetail.rating}}" max="5"> {{categoryDetail.rating}} </progress>
+          </div>
+        </div>
+      
+
+      </ng-container>
+    </div>
+   
+  </section>
+  <section class="languages">
+    <div class="heading">
+      Languages
+    </div>
+    <div class="languageItems">
+      <ul>
+        <li *ngFor="let language of languages">
+          {{ language}}
+        </li>
+      </ul>
+    </div>
+  </section>
+
