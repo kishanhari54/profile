@@ -1,0 +1,143 @@
+
+<div class="container">
+    <app-header></app-header>
+   <!--  <header>
+      <div class="info">
+        <div class="name"> Harshet Dayasankar</div>
+        <span class="role"> Consultant</span>
+      </div>
+      <div class="profimg">
+        <img src="assets/profImage.jpg" alt="Image">
+      </div>
+    </header> -->
+    <section class="resumeDetails">
+      <section class="main">
+        <app-about-me></app-about-me>
+       <!--  <section class="aboutme">
+          <p>
+            IT Professional, with aspirations of becoming a successful software architect who firmly believes
+            <span class="noWrap"> 'motivated team + team collaboration' </span>is the key for any successful product
+            delivery.<br>
+            From my personal experiences a healthy work life balance is very important for any individual in the long run.
+          </p>
+        </section> -->
+        <app-main-section [sections]="sections"></app-main-section>
+       <!--  <section class="sections" *ngFor="let section of sections">
+  
+          <div class="heading"> {{section.heading}}</div>
+          <div class="details" *ngFor="let detail of section.details">
+            <div class="timeframe"> {{detail.timeframe}}</div>
+            <div class="detailsInfo">
+              <span class="position"> {{detail.position}}</span>
+              <span class="organization"> {{detail.organization}}</span>
+              <ng-container *ngIf="detail.activities">
+                <div class="activity" *ngFor="let activity of detail.activities">
+                  <u *ngIf="activity.activityHeading">{{activity.activityHeading}}</u>
+                  <div class="activityInformation">
+                    <ul>
+                      <li *ngFor="let item of activity.activityInfo">{{item}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+  
+        </section> -->
+  
+        <!--  <section class="sections">
+        <div class="heading"> Work History</div>
+        <div class="details">
+          <div class="timeframe"> September 2019 to Current</div>
+          <div class="detailsInfo">
+            <span class="position"> Consultant</span>
+            <span class="organization"> Opentext Hyderabad, TS</span> 
+              <div class="activity">
+                <b>Angular 2+ - Front end development</b>
+                <div class="activityInformation">
+                  <ul>
+                    <li>Created Components and User Interface with Forms,tabs with use of features of angular.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="activity">
+                <b>Certified on Opentext Appworks Process Platform V16</b>
+                <div class="activityInformation">
+                  <ul>
+                    <li>Contributed to create workflow's for End to End process handling.</li>
+                    <li>Contributed to create REST services for consumption from Front end.</li>
+                  </ul>
+                </div>
+              </div>  
+              <div class="activity">
+                <b>Certified on Opentext Magellan Analytics Designer V16</b>
+                <div class="activityInformation">
+                  <ul>
+                    <li>Created reports with table structure for user policy information</li>
+                    <li>Created reports with crosstab based layout (Work Scheduling)</li>
+                  </ul>
+                </div>
+              </div>  
+          </div>
+        </div>
+      </section> -->
+  
+      </section>
+      <section class="side">
+        <app-side-component></app-side-component>
+  <!--       <section class="contact">
+          <div class="heading">Contact</div>
+          <div class="contactbox"> 
+          <ng-container *ngFor="let contact of contactSection">
+           <div class="contactSection"> 
+            <div class="contactTitle">
+              {{contact.title}}
+            </div>
+            <div class="contactInfo">
+              {{contact.value}}
+            </div>
+          </div>
+          </ng-container>
+        </div>
+  
+        </section>
+        <section class="skills">
+          <div class="heading">
+            Skills
+          </div>
+          <div class="category">
+            <ng-container  *ngFor="let skill of skillSection">
+              <div class="categoryItems">    
+                <div class='categoryName'>
+                  {{skill.category}}
+                </div>
+                <div class="categoryDetail" *ngFor="let categoryDetail of skill.categoryDetails">
+                  <label class="skillName" for="categoryDetail.skill">{{categoryDetail.skill}}</label>
+                  <progress class="skillRating"  id="categoryDetail.skill" value="{{categoryDetail.rating}}" max="5"> {{categoryDetail.rating}} </progress>
+                </div>
+              </div>
+            
+    
+            </ng-container>
+          </div>
+         
+        </section>
+        <section class="languages">
+          <div class="heading">
+            Languages
+          </div>
+          <div class="languageItems">
+            <ul>
+              <li *ngFor="let language of languages">
+                {{ language}}
+              </li>
+            </ul>
+          </div>
+        </section>
+  
+      </section> -->
+    </section>
+    </section>
+  
+  </div>
+  <p-scrollTop></p-scrollTop>

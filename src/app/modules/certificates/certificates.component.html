@@ -1,0 +1,20 @@
+<h1>   Work In Progress</h1>>
+<div class="container"> 
+
+
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions"
+[showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true" indicatorsPosition="right"
+ [containerStyle]="{'max-width': '600px'}" [numVisible]="7"> 
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;"/>
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="p-grid p-nogutter p-justify-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block; width:100px;"/>
+        </div>
+    </ng-template>
+</p-galleria>
+<button pButton type="button" icon="pi pi-home" iconPos="left"  routerLink='/' class="home">  Home </button>
+</div>
+
+   

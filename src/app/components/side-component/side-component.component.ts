@@ -49,6 +49,7 @@ export class SideComponentComponent implements OnInit {
   ]
 
   languages = ['Hindi' ,'Tamil', 'English']
+
   ngOnInit(): void {
   }
 
