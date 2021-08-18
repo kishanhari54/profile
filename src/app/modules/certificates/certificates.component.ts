@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificatesComponent implements OnInit {
 
-  
+  displayCustom: boolean = false;
+  displayBasic2: boolean  = false;
+  displayBasic: boolean  = true;
+
+  activeIndex: number = 0;
+
+  imageClick(index: number) {
+    this.activeIndex = index;
+    this.displayCustom = true;
+}
   responsiveOptions:any[] = [
     {
         breakpoint: '1024px',
@@ -25,17 +34,42 @@ export class CertificatesComponent implements OnInit {
 
 images:any = [
   {
-      "previewImageSrc": "assets/Certificate1.jpg",
-     // "thumbnailImageSrc": "assets/profImage.jpg",
+      "previewImageSrc": "assets/1.jpg",
+      "thumbnailImageSrc": "assets/thumbnail.jpg",
       "alt": "Description for Image 1",
       "title": "Title 1"
   },
   {
-      "previewImageSrc": "assets/trophy1.jpg",
-     // "thumbnailImageSrc": "assets/profImage.jpg",
+      "previewImageSrc": "assets/2.jpg",
+      "thumbnailImageSrc": "assets/thumbnail.jpg",
       "alt": "Description for Image 1",
       "title": "Title 1"
-  },
+  }, {
+    "previewImageSrc": "assets/3.jpg",
+    "thumbnailImageSrc": "assets/thumbnail.jpg",
+    "alt": "Description for Image 1",
+    "title": "Title 1"
+}, {
+  "previewImageSrc": "assets/4.jpg",
+  "thumbnailImageSrc": "assets/thumbnail.jpg",
+  "alt": "Description for Image 1",
+  "title": "Title 1"
+}, {
+  "previewImageSrc": "assets/5.jpg",
+  "thumbnailImageSrc": "assets/thumbnail.jpg",
+  "alt": "Description for Image 1",
+  "title": "Title 1"
+}, {
+  "previewImageSrc": "assets/6.jpg",
+  "thumbnailImageSrc": "assets/thumbnail.jpg",
+  "alt": "Description for Image 1",
+  "title": "Title 1"
+}, {
+  "previewImageSrc": "assets/7.jpg",
+  "thumbnailImageSrc": "assets/thumbnail.jpg",
+  "alt": "Description for Image 1",
+  "title": "Title 1"
+}
  ]
 
   constructor() { }

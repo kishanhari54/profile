@@ -1,7 +1,15 @@
-.home{
+.home {
     position: absolute !important;
-    right:30px;
-    bottom:30px;
+    right: 30px;
+    bottom: 30px;
     width: auto;
-    padding: 10px;;
+    padding: 10px;
+    z-index: 100001;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh);
 }

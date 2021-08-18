@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { ScrollTopModule } from 'primeng/scrolltop';
+import {ScrollTopModule} from 'primeng/scrolltop';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutMeComponent } from 'src/app/components/about-me/about-me.component';
 import { MainSectionComponent } from 'src/app/components/main-section/main-section.component';

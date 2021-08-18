@@ -4,6 +4,7 @@ import { CertificatesComponent } from './certificates.component';
 import {GalleriaModule} from 'primeng/galleria';
 import { RouterModule, Routes } from '@angular/router';
 import {ButtonModule} from 'primeng/button';
+import {CarouselModule} from 'primeng/carousel';
 
 const routes: Routes = [
   {
@@ -18,7 +19,9 @@ const routes: Routes = [
     CommonModule,
     GalleriaModule,
     RouterModule.forChild(routes),
-    ButtonModule
+    ButtonModule,
+    CarouselModule,
+    GalleriaModule
   ],
   exports:[RouterModule]
 })

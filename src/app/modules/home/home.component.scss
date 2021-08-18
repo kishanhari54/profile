@@ -1,4 +1,4 @@
-.container{
+/* .container{
     max-width:1300px;
     min-width: 300px;
     margin: 8px auto;
@@ -9,29 +9,31 @@
     :hover {
         box-shadow: inset 0 0 10px rgb(88 88 95 / 12%);
        // cursor: none;
-        -webkit-user-select: none;  /* Chrome all / Safari all */
-        user-select: none;
+        -webkit-user-select: none; 
 
-    }
+user-select: none;
+
 }
 
-.resumeDetails{
+}
+*/
+
+.resumeDetails {
     display: flex;
     flex-wrap: wrap;
-   /*  p  {
+    /*  p  {
         //font-size: clamp(11px,15px,18px);
         font-size: 12px;
         line-height: 18px;
         outline-color: rgb(52,52,52);
     } */
     .main {
-        flex:2;
-        padding:15px;
+        flex: 2;
+        padding: 15px;
     }
     .side {
-        flex:1;
-        padding:15px;
-        background-color: rgb(244,244,244);
+        flex: 1;
+        padding: 15px;
+        background-color: rgb(244, 244, 244);
     }
-
 }

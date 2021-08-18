@@ -1,20 +1,16 @@
-<h1>   Work In Progress</h1>>
-<div class="container"> 
+<!-- <embed src="assets/ACCENTURE ACHIEVEMENTS.pdf" width="800px" height="600px" /> -->
 
-
-<p-galleria [value]="images" [responsiveOptions]="responsiveOptions"
-[showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true" indicatorsPosition="right"
- [containerStyle]="{'max-width': '600px'}" [numVisible]="7"> 
-    <ng-template pTemplate="item" let-item>
-        <img [src]="item.previewImageSrc" style="width: 100%; display: block;"/>
-    </ng-template>
-    <ng-template pTemplate="thumbnail" let-item>
-        <div class="p-grid p-nogutter p-justify-center">
-            <img [src]="item.thumbnailImageSrc" style="display: block; width:100px;"/>
-        </div>
-    </ng-template>
-</p-galleria>
-<button pButton type="button" icon="pi pi-home" iconPos="left"  routerLink='/' class="home">  Home </button>
+<div class="container">
+    <!-- <button pButton type="button" icon="pi pi-external-link" label="Show Certificates" (click)="displayBasic = true"></button> -->
+    <p-galleria [value]="images" [(visible)]="displayBasic" [containerStyle]="{'max-width': '660px'}" [showThumbnails]="false" [responsiveOptions]="responsiveOptions" [numVisible]="7" [circular]="true" [fullScreen]="false" [showItemNavigators]="true" [baseZIndex]="100000">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+        </ng-template>
+        <!--  <ng-template pTemplate="thumbnail" let-item>
+            <div class="p-grid p-nogutter p-justify-center">
+                <img [src]="item.thumbnailImageSrc" style="display: block;" />
+            </div>
+        </ng-template> -->
+    </p-galleria>
+    <button pButton type="button" icon="pi pi-caret-left" iconPos="left" routerLink='/' class="home">  </button>
 </div>
-
-   
