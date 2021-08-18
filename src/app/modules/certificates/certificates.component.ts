@@ -70,6 +70,24 @@ images:any = [
   "alt": "Description for Image 1",
   "title": "Title 1"
 }
+, {
+  "previewImageSrc": "assets/8.png",
+  "thumbnailImageSrc": "assets/thumbnail.jpg",
+  "alt": "Description for Image 1",
+  "title": "Title 1"
+}
+, {
+  "previewImageSrc": "assets/9.png",
+  "thumbnailImageSrc": "assets/thumbnail.jpg",
+  "alt": "Description for Image 1",
+  "title": "Title 1"
+}
+, {
+  "previewImageSrc": "assets/10.jpg",
+  "thumbnailImageSrc": "assets/thumbnail.jpg",
+  "alt": "Description for Image 1",
+  "title": "Title 1"
+}
  ]
 
   constructor() { }
