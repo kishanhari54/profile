@@ -87,6 +87,11 @@ images:any = [
   "thumbnailImageSrc": "assets/thumbnail.jpg",
   "alt": "Description for Image 1",
   "title": "Title 1"
+}, {
+  "previewImageSrc": "assets/Mean_Stack.jpg",
+  "thumbnailImageSrc": "assets/thumbnail.jpg",
+  "alt": "Udemy Mean Stack Certificate",
+  "title": "Mean Stack"
 }
  ]
 
